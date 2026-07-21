@@ -159,6 +159,21 @@
             font-size: 16px;
             font-weight: 600;
         }
+        .thesis-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 14px;
+        margin-top: 14px;
+        }
+        
+        .thesis-grid div {
+            padding: 12px 14px;
+            background-color: white;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            font-size: 16px;
+            color: #444;
+        }
 
         /* MAIN CONTENT */
 
@@ -390,7 +405,7 @@
 
                 <p class="hero-description">
                     My research focuses on privacy risks, fairness, and trustworthy AI, 
-                    with particular emphasis on large language models and responsible AI development and deployment.
+                    with particular emphasis on large language models.
                 </p>
 
                 <div class="research-badge">
@@ -473,12 +488,18 @@
                 <li>Privacy-Preserving Technologies</li>
                 <li>Causality from a Fairness Perspective </li>
             </ul>
-            <ul>
-            Ph.D. Thesis: Advancing ethical and responsible AI: exploring fairness, privacy, and explainability through causal perspectives.
-            Defense Date: October 7th, 2024.
-            Chair:
-            Comity: 
-            </ul>
+            <div class="thesis-card">
+                <h3>Ph.D. Thesis</h3>
+                <p class="thesis-title">
+                    Advancing Ethical and Responsible AI: Exploring Fairness,
+                    Privacy, and Explainability through Causal Perspectives
+                </p>
+            
+                <div class="thesis-grid">
+                    <div><strong>Defense Date</strong><br>October 7, 2024</div>
+                    <div><strong>Chair</strong><br>Comity</div>
+                </div>
+            </div>
         </section>
 
         <section id="teaching">
